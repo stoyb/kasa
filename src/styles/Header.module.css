@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 16px;
+}
+.navHome, .navAbout {
+    text-decoration: none;
+    color: #FF6060;
+    font-size: 12px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+}
+.logo{
+    width: 100px;
+}
+.navAbout {
+    padding-left: 20px;
+}
+.navLinkActive {
+    text-decoration: underline;
+    background-color: blue;
+}
+
+@media (min-width :768px) {
+    .header {
+        padding: 20px 36px;
+    }
+    .logo{
+        width: 120px;
+    }
+}
+
+@media (min-width :992px) {
+    .header {
+        padding: 20px 50px;
+    }
+}

@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #FFF;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 64px;
+}
+.copyrights {
+    max-width: 100px;
+    margin: 20px 0;
+}
+
+@media (min-width :768px) {
+    .footer {
+        padding: 24px;
+    }
+    .logo {
+        padding: 20px 0;
+    }
+    .copyrights {
+        max-width: 200px;
+        margin : 0;
+    }
+}
