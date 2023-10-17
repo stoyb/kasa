@@ -14,7 +14,6 @@ const Home = () => {
         <p className={styles.tagline}>Chez vous, partout et ailleurs</p>
       </div>
     </Banner>
-    <Banner/>
     <Card/>
     </>
   )

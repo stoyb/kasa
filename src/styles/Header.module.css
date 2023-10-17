@@ -12,15 +12,15 @@
     font-family: Montserrat;
     text-transform: uppercase;
 }
+
+.navHome:active, .navAbout:active {
+    text-decoration: underline;
+}
 .logo{
     width: 100px;
 }
 .navAbout {
     padding-left: 20px;
-}
-.navLinkActive {
-    text-decoration: underline;
-    background-color: blue;
 }
 
 @media (min-width :768px) {

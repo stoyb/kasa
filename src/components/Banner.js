@@ -5,9 +5,6 @@ const Banner = ({children}) => {
     <>
     <section>
       {children}
-      {/* <div className={styles.background}>
-          <p className={styles.tagline}>Chez vous, partout et ailleurs</p>
-      </div> */}
     </section>
       
     </>
