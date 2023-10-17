@@ -1,0 +1,45 @@
+.background {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 16px;
+    padding: 0 16px;
+    background-color: #FF6060;
+    border-radius: 8px;
+    color: #FFF;
+    height: 30px;
+}
+.title {
+    font-size: 12px;
+    font-family: Montserrat;
+}
+.icon {
+    font-size: 16px;
+}
+
+@media (min-width :768px) {
+    .background {
+        margin: 21px 36px;
+        height: 40px;
+    }
+    .title {
+       font-size: 18px; 
+    }
+    .icon {
+        font-size: 24px;
+    }
+}
+
+@media (min-width :992px) {
+    .background {
+        margin: 28px 50px;
+        height: 52px;
+    }
+    .title {
+       font-size: 24px; 
+    }
+    .icon {
+        font-size: 32px;
+    }
+}
+
