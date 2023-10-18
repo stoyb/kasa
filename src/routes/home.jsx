@@ -11,7 +11,7 @@ const Home = () => {
     <Header/>
     <Banner>
       <div className={styles.background}>
-        <p className={styles.tagline}>Chez vous, partout et ailleurs</p>
+        <h1 className={styles.tagline}>Chez vous, partout et ailleurs</h1>
       </div>
     </Banner>
     <Card/>

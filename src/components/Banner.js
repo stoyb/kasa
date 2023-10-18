@@ -5,8 +5,7 @@ const Banner = ({children}) => {
     <>
     <section>
       {children}
-    </section>
-      
+    </section>  
     </>
   )
 }

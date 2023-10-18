@@ -6,6 +6,9 @@
     border-radius: 8px;
     margin: 0 16px;
 }
+.backgroundCollapse {
+    margin-top: 20px;
+}
 
 @media (min-width :768px) {
     .background {
