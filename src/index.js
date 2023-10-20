@@ -5,39 +5,38 @@ import Root from "./routes/root";
 import Home from './routes/home';
 import About from './routes/about';
 import Error from './routes/error';
+import Accomodation from './routes/accomodation';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root/>,
-    errorElement: <Error />, 
+    element: <Root />,
+    errorElement: <Error />,
     children: [
       {
-        index: "home",
+        index: true,
         element: <Home />,
         errorElement: <Error />,
-        //loader: api.getAll
-      }, 
-      // {
-      //   path: 'accomodation/:id',
-      //   element: <Details />,
-      //   errorElement: <Error />,
-      //   //loader: api.getOneById
-      // }, 
+      },
+      {
+        path: 'accomodation:id',
+        element: <Accomodation />,
+        errorElement: <Error />,
+      },
       {
         path: 'about',
         element: <About />,
         errorElement: <Error />,
-        //loader: api.getAllAbout
-      }, 
+      },
       {
         path: '*',
-        element: <Error status={404}/>
-      }
-    ]
+        element: <Error status={404} />,
+      },
+    ],
   },
 ]);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
