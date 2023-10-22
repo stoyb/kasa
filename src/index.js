@@ -17,21 +17,21 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-        errorElement: <Error />,
+        errorElement: <Error />
       },
       {
-        path: 'accomodation:id',
+        path: 'accomodation/:id',
         element: <Accomodation />,
-        errorElement: <Error />,
+        errorElement: <Error />
       },
       {
         path: 'about',
         element: <About />,
-        errorElement: <Error />,
+        errorElement: <Error />
       },
       {
         path: '*',
-        element: <Error status={404} />,
+        element: <Error status={404} />
       },
     ],
   },
