@@ -1,0 +1,33 @@
+.container {
+    margin: 8px 16px;
+}
+.title, .location  {
+    font-family: Montserrat;
+    color:#FF6060;
+}
+.title {
+    font-size: 18px;
+}
+.location {
+    font-size: 14px;
+}
+.blocTags {
+    display: flex;
+    column-gap: 12px;
+}
+.tag{
+    margin: 0;
+    background-color: #FF6060;
+    font-size: 8px;
+    color: #FFF;
+    font-family: Montserrat;
+    border-radius: 4px;
+    padding: 4px 12px;
+}
+.starPink {
+    color: #FF6060;
+}
+.starGrey {
+    color:#E3E3E3;
+
+}
