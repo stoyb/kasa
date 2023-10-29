@@ -1,5 +1,6 @@
 .container {
-    margin: 8px 16px;
+    display: flex;
+    flex-direction: column;
 }
 .title, .location  {
     font-family: Montserrat;
@@ -7,13 +8,20 @@
 }
 .title {
     font-size: 18px;
+    margin:0;
 }
 .location {
     font-size: 14px;
+
+}
+.locationBloc{
+     margin: 8px 16px;
+
 }
 .blocTags {
     display: flex;
     column-gap: 12px;
+    margin-bottom: 8px;
 }
 .tag{
     margin: 0;
@@ -24,10 +32,61 @@
     border-radius: 4px;
     padding: 4px 12px;
 }
+.hostBloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 16px;
+}
+.hostId {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hostIdName {
+    margin: 0;
+    font-family: Montserrat;
+    color:#FF6060;
+    width: 40px;
+    max-width: 100%;
+}
+.hostImg{
+    height: 32px;
+    margin-left: 8px;
+    border-radius: 75px;
+}
 .starPink {
     color: #FF6060;
 }
 .starGrey {
     color:#E3E3E3;
-
+}
+@media (min-width:768px){
+    .hostBloc, .locationBloc{
+        margin: 8px 36px;
+    }
+}
+@media (min-width:992px){
+    .rows{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 14px;
+    }
+    .hostBloc, .locationBloc{
+        margin: 8px 50px;
+    }
+    .hostBloc {
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+    .collapses {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 4px;
+    }
+    .collapseDescription{
+        margin: 0;
+    }
 }

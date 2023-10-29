@@ -17,32 +17,31 @@ const Accomodation = () => {
     <Header/>
     <Slideshow/>
      <div className={styles.container}>
-       <div>
-          <h1 className={styles.title}>{item.title}</h1>
-          <p className={styles.location}>{item.location}</p>
-          <div className={styles.blocTags}>{item.tags.map((tag,index) => 
-            <p className={styles.tag} key={index}>{tag}</p>
-            )}
-          </div>
+       <div className={styles.rows}>
+        <div className={styles.locationBloc}>
+            <h1 className={styles.title}>{item.title}</h1>
+            <p className={styles.location}>{item.location}</p>
+            <div className={styles.blocTags}>{item.tags.map((tag,index) => 
+              <p className={styles.tag} key={index}>{tag}</p>
+              )}
+            </div>
+        </div>
+        <div className={styles.hostBloc}>
+            <div> 
+              { [1, 2, 3, 4, 5].map((star, index) =>  
+                <span key={index} className={rating >= star ? styles.starPink : styles.starGrey}><FontAwesomeIcon icon={faStar} /></span>
+              )}
+            </div>
+            <div className={styles.hostId}>
+              <p className={styles.hostIdName}>{item.host.name}</p>
+              <img className={styles.hostImg}src={item.host.picture} alt="Host"/>
+            </div> 
+        </div>
        </div>
-       <div>
-          <div> 
-            { [1, 2, 3, 4, 5].map((star, index) =>  
-              <span key={index} className={rating >= star ? styles.starPink : styles.starGrey}><FontAwesomeIcon icon={faStar} /></span>
-            )}
-          </div>
-           <div>
-            <p>{item.host.name}</p>
-            <img src={item.host.picture} alt="ImgHost"/>
-          </div> 
-       </div>
-       <div>
+       <div className={styles.collapses}>
          <Collapse title="Description" text={item.description} />
          <Collapse title="Équipements" text={item.equipments.map((equi) => <li>{equi}</li>)} />
        </div>
-       
-
-       
      </div>
     </>
   )

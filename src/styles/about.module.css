@@ -25,4 +25,8 @@
     .background {
         margin: 0 50px;
     }
+    .backgroundCollapse {
+        margin: 0 64px;
+        padding-top: 20px;
+    }
 }
