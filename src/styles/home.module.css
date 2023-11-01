@@ -1,41 +1,41 @@
 .background {
     height:111px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/imgBannerHome.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    margin: 0 16px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/imgBannerHome.jpg');
+    background-size:cover;
+    background-position:center;
+    border-radius:8px;
+    margin:0 16px;
 }
 .tagline {
     color:#FFF;
-    font-family: Montserrat;
-    font-size: 24px;
-    max-width: 218px;
-    padding: 30px 20px;
-    margin: 0;
+    font-family:Montserrat;
+    font-size:24px;
+    max-width:218px;
+    padding:30px 20px;
+    margin:0;
 }
-
+/* Tablet */
 @media (min-width :768px) {
     .background {
         height:223px;
-        border-radius: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 36px;
+        border-radius:8px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin:0 36px;
     }
     .tagline {
-        font-size: 30px;
-        max-width: 100%;
+        font-size:30px;
+        max-width:100%;
     }
 }
-
+/* Desktop */
 @media (min-width :992px) {
     .background {
-        margin: 0 50px;
+        margin:0 50px;
     }
     .tagline {
-        font-size: 44px;
+        font-size:44px;
     }
 }
 

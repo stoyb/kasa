@@ -1,53 +1,46 @@
-.container {
-    display: flex;
-    flex-direction: column;
+.container, .blocTags, .hostBloc, .hostId {
+    display:flex;
 }
-.title, .location  {
-    font-family: Montserrat;
+.title, .location, .tag, .hostIdName  {
+    font-family:Montserrat;
+}
+.title, .location, .hostIdName, .starPink {
     color:#FF6060;
 }
-.title {
-    font-size: 18px;
+.title, .tag, .hostIdName {
     margin:0;
 }
-.location {
-    font-size: 14px;
-
+.hostBloc, .hostId {
+    flex-direction:row;
+    align-items:center;
 }
-.locationBloc{
-     margin: 8px 16px;
-
+.locationBloc, .hostBloc {
+    margin:8px 16px;
+}
+.container {
+    flex-direction:column;
+}
+.title {
+    font-size:18px;
+}
+.location {
+    font-size:14px;
 }
 .blocTags {
-    display: flex;
-    column-gap: 12px;
-    margin-bottom: 8px;
+    column-gap:12px;
+    margin-bottom:8px;
 }
 .tag{
-    margin: 0;
     background-color: #FF6060;
     font-size: 8px;
     color: #FFF;
-    font-family: Montserrat;
     border-radius: 4px;
     padding: 4px 12px;
 }
 .hostBloc {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin: 8px 16px;
-}
-.hostId {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 .hostIdName {
-    margin: 0;
-    font-family: Montserrat;
-    color:#FF6060;
     width: 40px;
     max-width: 100%;
 }
@@ -56,17 +49,16 @@
     margin-left: 8px;
     border-radius: 75px;
 }
-.starPink {
-    color: #FF6060;
-}
 .starGrey {
     color:#E3E3E3;
 }
+/* Tablet */
 @media (min-width:768px){
     .hostBloc, .locationBloc{
         margin: 8px 36px;
     }
 }
+/* Desktop */
 @media (min-width:992px){
     .rows{
         display: flex;

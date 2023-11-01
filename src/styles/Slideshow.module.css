@@ -1,14 +1,14 @@
 .container {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .iconPrev, .iconNext {
-    color : #FFF;
-    font-size : 20px;
-    position: relative;
-    z-index: 2;
+    color:#FFF;
+    font-size:20px;
+    position:relative;
+    z-index:2;
 }
 .iconPrev {
     left:6%
@@ -20,7 +20,7 @@
     width: 92%;
     border-radius: 8px;
 }
-
+/* Tablet */
 @media (min-width :768px) {
     .iconPrev, .iconNext {
         font-size: 36px;
@@ -32,16 +32,10 @@
         right:5%;
     }
 }
-
+/* Desktop */
 @media (min-width :992px) {
     .iconPrev, .iconNext {
         font-size: 50px;
-    }
-    .iconPrev {
-        left:5%;
-    }
-    .iconNext {
-        right:5%;
     }
     .img {
         height: 415px;
