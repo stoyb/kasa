@@ -40,7 +40,7 @@ const Accomodation = () => {
        </div>
        <div className={styles.collapses}>
          <Collapse title="Description" text={item.description} />
-         <Collapse title="Équipements" text={item.equipments.map((equi) => <li>{equi}</li>)} />
+         <Collapse title="Équipements" text={item.equipments.map((equi,index) => <li key={index}>{equi}</li>)} />
        </div>
      </div>
     </>
