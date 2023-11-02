@@ -39,9 +39,10 @@
 }
 .hostBloc {
     justify-content: space-between;
+    width: 100%;
 }
 .hostIdName {
-    width: 40px;
+    width: 45%;
     max-width: 100%;
 }
 .hostImg{
@@ -57,6 +58,9 @@
     .hostBloc, .locationBloc{
         margin: 8px 36px;
     }
+    .hostBloc{
+        width: 93%;
+    }
 }
 /* Desktop */
 @media (min-width:992px){
@@ -66,17 +70,18 @@
         justify-content: space-between;
         margin: 0 14px;
     }
-    .hostBloc, .locationBloc{
-        margin: 8px 50px;
-    }
     .hostBloc {
         justify-content: space-around;
         flex-direction: column-reverse;
+        width:15%;
+    }
+    .hostId {
+        justify-content: center;
     }
     .collapses {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 0 4px;
+        margin: 0 -10px;
     }
     .collapseDescription{
         margin: 0;

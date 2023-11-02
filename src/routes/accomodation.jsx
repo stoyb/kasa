@@ -16,7 +16,7 @@ const Accomodation = () => {
     <>
     <Header/>
     <Slideshow/>
-     <div className={styles.container}>
+     <div key= {id} className={styles.container}>
        <div className={styles.rows}>
         <div className={styles.locationBloc}>
             <h1 className={styles.title}>{item.title}</h1>
