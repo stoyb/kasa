@@ -1,5 +1,4 @@
 import { Link, useRouteError } from "react-router-dom";
-import Header from "../components/Header";
 import styles from "../styles/error.module.css";
 
 function Error() {
@@ -8,7 +7,6 @@ function Error() {
 
   return (
     <div>
-      <Header/>
       <main className={styles.container}>
         <h1 className={styles.title}>404</h1>
         <p className={styles.subtitleMobile}>Oups! La page que<br/> vous demandez n'existe pas.</p>
