@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../components/Header'
-import Banner from '../components/Banner'
-import Card from '../components/Card'
-import styles from '../styles/home.module.css'
+import Header from '../../components/Header/Header'
+import Banner from '../../components/Banner/Banner'
+import Card from '../../components/Card/Card'
+import styles from './home.module.css'
 
 
 const Home = () => {

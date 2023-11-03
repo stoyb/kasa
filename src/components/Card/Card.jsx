@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../styles/Card.module.css'
-import data from '../data.json'
+import styles from './Card.module.css'
+import data from '../../data.json'
 import { Link } from 'react-router-dom'
 
 

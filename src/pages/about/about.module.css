@@ -1,6 +1,6 @@
 .background {
     height:111px;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/imgBannerAbout.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/imgBannerAbout.jpg');
     background-size:cover;
     background-position:center;
     border-radius:8px;

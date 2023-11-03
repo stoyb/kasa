@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700&family=Montserrat:wght@500&family=Roboto&display=swap'); 
 .navHome, .navAbout, .navHomeActive, .navAboutActive {
     text-decoration:none;
     color:#FF6060;

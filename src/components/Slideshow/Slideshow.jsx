@@ -1,9 +1,9 @@
 import { React, useState } from 'react'
-import data from '../data.json'
+import data from '../../data.json'
 import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import styles from '../styles/Slideshow.module.css'
+import styles from './Slideshow.module.css'
 
 const Slideshow = () => {
   const { id } = useParams();

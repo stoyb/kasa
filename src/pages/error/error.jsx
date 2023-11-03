@@ -1,5 +1,5 @@
 import { Link, useRouteError } from "react-router-dom";
-import styles from "../styles/error.module.css";
+import styles from "./error.module.css";
 
 function Error() {
   const error = useRouteError();

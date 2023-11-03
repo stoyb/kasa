@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700&family=Montserrat:wght@500&family=Roboto&display=swap'); 
 .container, .blocTags, .hostBloc, .hostId {
     display:flex;
 }
-.title, .location, .tag, .hostIdName  {
+ .title, .location, .tag, .hostIdName  {
     font-family:Montserrat;
-}
+} 
 .title, .location, .hostIdName, .starPink {
     color:#FF6060;
 }

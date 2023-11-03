@@ -1,12 +1,12 @@
 import React from 'react'
-import styles from '../styles/accomodation.module.css'
-import Header from '../components/Header'
-import Slideshow from '../components/Slideshow'
+import styles from './accomodation.module.css'
+import Header from '../../components/Header/Header'
+import Slideshow from '../../components/Slideshow/Slideshow'
 import { useParams } from 'react-router-dom'
-import data from '../data.json'
+import data from '../../data.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
-import Collapse from '../components/Collapse'
+import Collapse from '../../components/Collapse/Collapse'
 
 const Accomodation = () => {
   const { id } = useParams();
