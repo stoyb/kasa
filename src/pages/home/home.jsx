@@ -8,7 +8,6 @@ import styles from './home.module.css'
 const Home = () => {
   return (
     <>
-    <Header/>
     <Banner>
       <div className={styles.background}>
         <h1 className={styles.tagline}>Chez vous, partout et ailleurs</h1>

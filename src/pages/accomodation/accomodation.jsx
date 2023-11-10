@@ -14,8 +14,7 @@ const Accomodation = () => {
   let rating = parseInt(item.rating)
     return (
     <>
-    <Header/>
-    <Slideshow/>
+    <Slideshow className={styles.slideShow}/>
      <div key= {id} className={styles.container}>
        <div className={styles.rows}>
         <div className={styles.locationBloc}>

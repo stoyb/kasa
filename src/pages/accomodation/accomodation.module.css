@@ -16,10 +16,16 @@
     align-items:center;
 }
 .locationBloc, .hostBloc {
-    margin:8px 16px;
+    margin:8px 18px;
+}
+.slideShow {
+    margin:0 20px;
 }
 .container {
     flex-direction:column;
+}
+.rows {
+    width: 100%;
 }
 .title {
     font-size:18px;
@@ -32,19 +38,22 @@
     margin-bottom:8px;
 }
 .tag{
-    background-color: #FF6060;
-    font-size: 8px;
-    color: #FFF;
-    border-radius: 4px;
-    padding: 4px 12px;
+    background-color:#FF6060;
+    font-size:8px;
+    color:#FFF;
+    border-radius:4px;
+    padding:4px 12px;
 }
 .hostBloc {
+    width:89%;
     justify-content: space-between;
-    width: 100%;
 }
 .hostIdName {
-    width: 45%;
-    max-width: 100%;
+    width:45%;
+    max-width:100%;
+}
+.hostId {
+    justify-content:end;
 }
 .hostImg{
     height: 32px;
@@ -53,6 +62,9 @@
 }
 .starGrey {
     color:#E3E3E3;
+}
+.collapses {
+    margin:12px 0 0;
 }
 /* Tablet */
 @media (min-width:768px){

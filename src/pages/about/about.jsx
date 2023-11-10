@@ -7,7 +7,6 @@ import styles from './about.module.css'
 const About = () => {
   return (
     <>
-    <Header/>
     <Banner>
     <div className={styles.background}></div>
     </Banner>
