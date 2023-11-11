@@ -11,14 +11,12 @@
 }
 .iconPrev {
     left:13%;
-    
 }
 .iconNext {
     right:13%;
-    
 }
 .img {
-    height:200px;
+    height:255px;
     border-radius: 8px;
     margin: 0 18px;
     width: 90%;
@@ -30,13 +28,14 @@
         font-size: 36px;
     }
     .iconPrev {
-        left:5%;
+        left:6%;
     }
     .iconNext {
-        right:5%;
+        right:6%;
     }
     .img {
-        height:300px;
+        height:355px;
+        margin: 0;
     }
 }
 /* Desktop */
@@ -46,7 +45,7 @@
     }
     .img {
         height: 415px;
-        width: 90%;
+        width: 87%;
     }
 }
 

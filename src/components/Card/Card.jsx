@@ -7,16 +7,18 @@ import { Link } from 'react-router-dom'
 const Card = () => {
   return (
     <>
-    <div className={styles.container}>
-      {data.map((item) => (
+    <section className={styles.bgcontainer}>
+      <div className={styles.container}>
+        {data.map((item) => (
        <Link to={`/accomodation/${item.id}`} key={item.id} className={styles.background}>
           <img src={item.cover} alt="Appartement" className={styles.img}/>
           <div className={styles.bgimg}>
             <p className={styles.title}>{item.title}</p>
           </div>
-      </Link>
+        </Link>
       ))}
-    </div>
+      </div>
+    </section>
     
     </>
 

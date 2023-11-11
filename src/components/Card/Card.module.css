@@ -31,6 +31,9 @@
     padding:0 16px;
     text-align:left;
 }
+.img{
+    object-fit: cover;
+}
 /* Tablet */
 @media (min-width :768px) {
     .container {
@@ -45,11 +48,18 @@
 /* Desktop */
 @media (min-width :992px) {
     .container {
-        grid-template-columns:1fr 1fr 1fr;
-        margin:36px 50px;
+        grid-template-columns:282px 282px 282px;
+        margin:36px 70px;
+        width: 852px;
+        place-items: center;
     }
     .bgimg, .img {
-        width:220px;
-        height:220px;
+        width:242px;
+        height:242px;
+    }
+    .bgcontainer{
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
     }
 }

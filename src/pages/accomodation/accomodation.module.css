@@ -81,20 +81,24 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 0 14px;
+        margin: 0;
     }
     .hostBloc {
         justify-content: space-around;
         flex-direction: column-reverse;
         width:15%;
+        margin: 8px 46px;
     }
     .hostId {
         justify-content: center;
     }
+    .locationBloc {
+        margin: 8px 68px;
+    }
     .collapses {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 0 -10px;
+        margin: 0 6px;
     }
     .collapseDescription{
         margin: 0;

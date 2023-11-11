@@ -23,10 +23,10 @@
 /* Desktop */
 @media (min-width :992px) {
     .background {
-        margin:0 50px;
+        margin:0 70px;
     }
     .backgroundCollapse {
-        margin:0 64px;
+        margin:0 88px;
         padding-top:20px;
     }
 }
