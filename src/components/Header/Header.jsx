@@ -13,9 +13,19 @@ const Header = () => {
         <Link to="/">
             <img src={logo} className={styles.logo} alt="Logo"/>
         </Link>
-        <nav className={styles.nav}>
-            <NavLink to="/" className={location.pathname === '/' ? styles.navHomeActive : styles.navHome}>Accueil</NavLink>
-            <NavLink to="/about" className={location.pathname === '/about' ? styles.navAboutActive : styles.navAbout}>A propos</NavLink>
+        <nav className={styles.navHeader}>
+          <ul className={styles.ulHeader}>
+            <li>
+              <NavLink to="/" className={location.pathname === '/' ? styles.navHomeActive : styles.navHome}>
+                Accueil
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" className={location.pathname === '/about' ? styles.navAboutActive : styles.navAbout}>
+                A propos
+              </NavLink>
+            </li>
+          </ul>
         </nav>
     </header>
     </>

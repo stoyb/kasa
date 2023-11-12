@@ -1,8 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import styles from './Collapse.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import chevronUpIcon from '../../assets/chevronUp.svg'
 
 
 const Collapse = ({title, text}) => {
@@ -18,9 +17,9 @@ const Collapse = ({title, text}) => {
     <div className={styles.background}>
       <div className={styles.bgcollapse}>
         <p className={styles.title}>{title}</p>
-        <FontAwesomeIcon className={isTextVisible ? styles.icon : styles.iconActive} icon={faChevronUp} onClick={toggleTextVisibility}/>
+        <img src={chevronUpIcon} className={isTextVisible ? styles.icon : styles.iconActive} onClick={toggleTextVisibility} alt="Chevron up"/>
       </div>
-      <p className={isTextVisible ? styles.bgtext : styles.bgtextActive}>{text}</p>
+      <div className={isTextVisible ? styles.bgtext : styles.bgtextActive}>{text}</div>
     </div>
    
      

@@ -16,11 +16,14 @@
     align-items:center;
     padding:18px;
 }
-.logo{
-    width:100px;
-}
 .navAbout, .navAboutActive {
     padding-left:20px;
+}
+.ulHeader{
+    display: flex;
+}
+.logo{
+    width:100px;
 }
 /* Tablet */
 @media (min-width :768px) {

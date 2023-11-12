@@ -5,8 +5,8 @@
     align-items:center;
 }
 .iconPrev, .iconNext {
-    color:#FFF;
-    font-size:24px;
+    width: 24px;
+    height: 24px;
     position:relative;
 }
 .iconPrev {
@@ -22,10 +22,14 @@
     width: 90%;
     object-fit: cover;
 }
+.numbering {
+    display: none;
+}
 /* Tablet */
 @media (min-width :768px) {
     .iconPrev, .iconNext {
-        font-size: 36px;
+        width: 36px;
+        height: 36px;
     }
     .iconPrev {
         left:6%;
@@ -41,11 +45,20 @@
 /* Desktop */
 @media (min-width :992px) {
     .iconPrev, .iconNext {
-        font-size: 50px;
+        width: 50px;
+        height: 50px;
     }
     .img {
         height: 415px;
         width: 87%;
+    }
+    .numbering {
+        display: block;
+        position: absolute;
+        top: 440px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
     }
 }
 

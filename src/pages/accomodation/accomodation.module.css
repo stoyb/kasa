@@ -5,7 +5,7 @@
  .title, .location, .tag, .hostIdName  {
     font-family:Montserrat;
 } 
-.title, .location, .hostIdName, .starPink {
+.title, .location, .hostIdName {
     color:#FF6060;
 }
 .title, .tag, .hostIdName {
@@ -18,6 +18,10 @@
 .locationBloc, .hostBloc {
     margin:8px 18px;
 }
+.starPink,.starGrey {
+    width: 20px;
+    height: 20px;
+} 
 .slideShow {
     margin:0 20px;
 }
@@ -47,6 +51,7 @@
 .hostBloc {
     width:89%;
     justify-content: space-between;
+    align-items: center;
 }
 .hostIdName {
     width:45%;
@@ -60,11 +65,15 @@
     margin-left: 8px;
     border-radius: 75px;
 }
-.starGrey {
-    color:#E3E3E3;
-}
 .collapses {
     margin:12px 0 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
 }
 /* Tablet */
 @media (min-width:768px){
