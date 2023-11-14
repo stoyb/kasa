@@ -1,41 +1,38 @@
 .container {
-    margin:0;
+    margin:0 18px;
     display:flex;
     justify-content:center;
     align-items:center;
+
 }
 .iconPrev, .iconNext {
     width: 24px;
     height: 24px;
-    position:relative;
+    position:absolute;
 }
 .iconPrev {
-    left:13%;
+    left:7%;
 }
 .iconNext {
-    right:13%;
+    right:7%;
 }
 .img {
     height:255px;
     border-radius: 8px;
-    margin: 0 18px;
-    width: 90%;
     object-fit: cover;
+    width: 100%;
 }
 .numbering {
     display: none;
 }
 /* Tablet */
 @media (min-width :768px) {
+    .container{
+        margin:0 36px;
+    }
     .iconPrev, .iconNext {
         width: 36px;
         height: 36px;
-    }
-    .iconPrev {
-        left:6%;
-    }
-    .iconNext {
-        right:6%;
     }
     .img {
         height:355px;
@@ -44,13 +41,21 @@
 }
 /* Desktop */
 @media (min-width :992px) {
+    .container{
+        margin:0 70px;
+    }
     .iconPrev, .iconNext {
         width: 50px;
         height: 50px;
     }
+    .iconPrev {
+        left:9%;
+    }
+    .iconNext {
+        right:9%;
+    }
     .img {
         height: 415px;
-        width: 87%;
     }
     .numbering {
         display: block;

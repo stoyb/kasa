@@ -15,14 +15,12 @@ const Collapse = ({title, text}) => {
   return (
     <>
     <div className={styles.background}>
-      <div className={styles.bgcollapse}>
+      <div className={styles.bgcollapse} onClick={toggleTextVisibility}>
         <p className={styles.title}>{title}</p>
-        <img src={chevronUpIcon} className={isTextVisible ? styles.icon : styles.iconActive} onClick={toggleTextVisibility} alt="Chevron up"/>
+        <img src={chevronUpIcon} className={isTextVisible ? styles.icon : styles.iconActive} alt="Chevron up"/>
       </div>
       <div className={isTextVisible ? styles.bgtext : styles.bgtextActive}>{text}</div>
     </div>
-   
-     
     </>
   )
 }
